@@ -16,7 +16,7 @@ declare module '@octokit/rest' {
     /**
      * Use an `AbortController` instance to cancel a request. In node you can only cancel streamed requests.
      */
-    signal?: any,
+    signal?: AbortSignal,
     /**
      * Node only. Request/response timeout in ms, it resets on redirect. 0 to disable (OS limit applies). `options.request.signal` is recommended instead.
      */
